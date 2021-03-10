@@ -84,4 +84,4 @@ class ProductsView(viewsets.GenericViewSet):
         logger.info('Destroy object: {}'.format(product))
         product.delete()
         logger.info('Success destroy')
-        return Response(status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_204_NO_CONTENT)
