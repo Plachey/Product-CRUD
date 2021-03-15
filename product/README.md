@@ -8,6 +8,7 @@
 -- export DJANGO_SETTINGS_MODULE=product.settings.prod_settings - prod
 2) python manage.py migrate
 3) python manage.py runserver
+4) celery -A product worker --loglevel=debug
 
 ## For testing
 1) export DJANGO_SETTINGS_MODULE=tests.test_settings - test
